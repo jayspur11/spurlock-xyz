@@ -11,7 +11,7 @@
    args:
    - 'run'
    - 'deploy'
-   - 'github.com/jayspur11/spurlock-xyz'
+   - 'spurlock-xyz'
    - '--image'
    - 'gcr.io/$PROJECT_ID/github.com/jayspur11/spurlock-xyz:$COMMIT_SHA'
    - '--region'
@@ -20,4 +20,3 @@
    - 'managed'
  images:
  - 'gcr.io/$PROJECT_ID/github.com/jayspur11/spurlock-xyz:$COMMIT_SHA'
- 
