@@ -1,5 +1,13 @@
-{% extends 'base.html' %}
+{% extends 'base.html.j2' %}
 
 {% block header %}
     <h1>{% block title %}Player Safety Checklist{% endblock %}</h1>
+{% endblock %}
+
+{% block body %}
+    <form>
+        <label for="test">Test</label>
+        <input name="test" type="radio" value="test1">
+        <input name="test" type="radio" value="test2">
+    </form>
 {% endblock %}
