@@ -1,13 +1,30 @@
 {% extends 'base.html.j2' %}
 
 {% block header %}
-    <h1>{% block title %}Player Safety Checklist{% endblock %}</h1>
+<style>
+    table {
+        border: 1px solid black;
+        width: 100%;
+    }
+</style>
+<h1>{% block title %}Player Safety Checklist{% endblock %}</h1>
 {% endblock %}
 
 {% block body %}
-    <form>
-        <label for="test">Test</label>
-        <input name="test" type="radio" value="test1">
-        <input name="test" type="radio" value="test2">
-    </form>
+<form>
+<table>
+<th>
+    <label>
+        <h2>Game rating:
+            <select>
+                <option value="E">Everyone</option>
+                <option value="T">Teen</option>
+                <option value="M">Mature</option>
+                <option value="A">Adult-Only</option>
+            </select>
+        </h2>
+    </label>
+</th>
+</table>
+</form>
 {% endblock %}
